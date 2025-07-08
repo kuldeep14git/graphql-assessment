@@ -6,25 +6,26 @@ This project is a Drupal 11 site configured for **headless content delivery** us
 
 ## 🚀 Quick Start
 
-Make sure [DDEV](https://ddev.readthedocs.io/) is installed and configured on your machine.
+> Make sure [DDEV](https://ddev.readthedocs.io/) is installed and configured on your machine.
 
-### 1. Start the project
+### ✅ Step-by-step setup
 
 ```bash
+# 1. Start the DDEV project
 ddev start
 
-2. Install dependencies
+# 2. Install Composer dependencies
 ddev composer install
 
-
-3. Import the database
+# 3. Import the preloaded database
 ddev import-db --src=backup.sql.gz
 
-4. Rebuild cache
+# 4. Rebuild Drupal cache
 ddev drush cr
 
-5. Login as admin
+# 5. Login as admin (outputs one-time login link)
 ddev drush uli
+
 This will give you a one-time login URL to access the admin dashboard.
 
 Optional: Generate Dummy Content
